@@ -39,34 +39,28 @@ This project aims to democratize database optimization by combining the power of
 
 
 ## Architecture 🏗️
+## 🏗️ Architecture
 
-┌─────────────────────────────────────────────────────┐
-│                   Streamlit UI                       │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌──────────┐  │
-│  │  Home   │ │Performance│ │ Alerts  │ │ Settings │  │
-│  └─────────┘ └─────────┘ └─────────┘ └──────────┘  │
-└─────────────────────────────────────────────────────┘
-                           │
-┌─────────────────────────────────────────────────────┐
-│              Performer Graph (LangGraph)             │
-│  ┌──────────────┐ ┌──────────────┐ ┌─────────────┐ │
-│  │Analyze DB    │→│Human Loop    │→│SQL Executor │ │
-│  └──────────────┘ └──────────────┘ └─────────────┘ │
-└─────────────────────────────────────────────────────┘
-                           │
-┌─────────────────────────────────────────────────────┐
-│                   Core Modules                       │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌──────────┐ │
-│  │SQL Agent│ │Auto Fixer│ │Alert Mgr│ │Dashboard │ │
-│  └─────────┘ └─────────┘ └─────────┘ └──────────┘ │
-└─────────────────────────────────────────────────────┘
-                           │
-┌─────────────────────────────────────────────────────┐
-│              Database Adapters                       │
-│  ┌──────────┐ ┌──────┐ ┌────────┐ ┌─────────┐     │
-│  │PostgreSQL│ │MySQL │ │MongoDB │ │Custom   │     │
-│  └──────────┘ └──────┘ └────────┘ └─────────┘     │
-└─────────────────────────────────────────────────────┘
+### Component Descriptions
+
+| Component | Description |
+|-----------|-------------|
+| **Streamlit UI** | Web interface with tabs for Home, Performance, Alerts, Settings |
+| **Performer Graph** | LangGraph workflow: Analyze → Human Review → Execute |
+| **Core Modules** | SQL Agent, Auto Fixer, Alert Manager, Dashboard |
+| **Database Adapters** | PostgreSQL (primary), MySQL, MongoDB, Custom adapters |
+
+### Data Flow
+
+1. **User Input** → Streamlit UI captures optimization request
+2. **Analysis** → Performer Graph analyzes schema and queries
+3. **Index Detection** → SQL Agent checks existing indexes
+4. **Auto Fix** → Auto Fixer creates missing indexes (with approval)
+5. **Alert Generation** → Alert Manager detects anomalies
+6. **Visualization** → Dashboard displays metrics and recommendations
+
+
+        
 ## Project Description 📝
 
 QueryPulse-AI is an intelligent, AI-powered database performance optimization system that:
