@@ -37,6 +37,36 @@ Database performance optimization is a critical yet complex task that requires d
 
 This project aims to democratize database optimization by combining the power of Large Language Models (LLMs) with automated testing, predictive analytics, and intelligent alerting systems.
 
+
+## Architecture 🏗️
+
+┌─────────────────────────────────────────────────────┐
+│                   Streamlit UI                       │
+│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌──────────┐  │
+│  │  Home   │ │Performance│ │ Alerts  │ │ Settings │  │
+│  └─────────┘ └─────────┘ └─────────┘ └──────────┘  │
+└─────────────────────────────────────────────────────┘
+                           │
+┌─────────────────────────────────────────────────────┐
+│              Performer Graph (LangGraph)             │
+│  ┌──────────────┐ ┌──────────────┐ ┌─────────────┐ │
+│  │Analyze DB    │→│Human Loop    │→│SQL Executor │ │
+│  └──────────────┘ └──────────────┘ └─────────────┘ │
+└─────────────────────────────────────────────────────┘
+                           │
+┌─────────────────────────────────────────────────────┐
+│                   Core Modules                       │
+│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌──────────┐ │
+│  │SQL Agent│ │Auto Fixer│ │Alert Mgr│ │Dashboard │ │
+│  └─────────┘ └─────────┘ └─────────┘ └──────────┘ │
+└─────────────────────────────────────────────────────┘
+                           │
+┌─────────────────────────────────────────────────────┐
+│              Database Adapters                       │
+│  ┌──────────┐ ┌──────┐ ┌────────┐ ┌─────────┐     │
+│  │PostgreSQL│ │MySQL │ │MongoDB │ │Custom   │     │
+│  └──────────┘ └──────┘ └────────┘ └─────────┘     │
+└─────────────────────────────────────────────────────┘
 ## Project Description 📝
 
 QueryPulse-AI is an intelligent, AI-powered database performance optimization system that:
