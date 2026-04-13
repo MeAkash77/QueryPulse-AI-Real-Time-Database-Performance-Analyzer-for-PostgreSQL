@@ -40,6 +40,11 @@ This project aims to democratize database optimization by combining the power of
 
 ## Features
 
+<img width="959" height="479" alt="Image" src="https://github.com/user-attachments/assets/d98ee304-5ff0-4339-8ee4-c2c85c7dd770" />
+<img width="959" height="478" alt="Image" src="https://github.com/user-attachments/assets/11222cbf-125b-4de9-bbfa-2f40f6a68586" />
+<img width="959" height="477" alt="Image" src="https://github.com/user-attachments/assets/a1b5c15a-798b-43dc-998a-dc5a01aa1965" />
+<img width="959" height="479" alt="Image" src="https://github.com/user-attachments/assets/889381f4-a1df-4cb5-be87-699b7b9e4cc4" />
+
 
 
 ### Component Descriptions
