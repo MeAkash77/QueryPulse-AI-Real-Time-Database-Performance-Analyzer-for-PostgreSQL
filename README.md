@@ -7,6 +7,129 @@
 
 ## ⚠️ Disclaimer
 
+# QueryPulse-AI: Real-Time Database Performance Analyzer for PostgreSQL 🚀
+
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14%2B-blue.svg)](https://www.postgresql.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
+[![Version](https://img.shields.io/badge/version-1.0--beta-orange.svg)](https://github.com/cloudraftio/stonebraker/releases)
+
+## ⚠️ Disclaimer
+
+**This is a beta release (v1.0-beta) and NOT production-ready software. Use at your own risk.**
+- This tool may suggest database changes that could impact performance
+- Always test suggestions in a non-production environment first
+- Back up your database before applying any changes
+- The autonomous fix mode should be used with approval enabled initially
+
+## 🌟 What's New in v1.0
+
+- **Autonomous Fix Mode** 🤖 - Auto-create indexes with approval workflow
+- **Natural Language Debugging** 💬 - Ask "Why is my DB slow?" in plain English
+- **Predictive Alerting** 🔔 - Detect performance degradation before outages
+- **Multi-Database Support** 🔄 - PostgreSQL, MySQL, MongoDB adapters
+- **Beautiful Dashboard** 📊 - Real-time performance visualizations
+- **Index Usage Analytics** 📈 - Track which indexes are actually being used
+- **Smart Rollback** ⏮️ - Automatic rollback if indexes hurt performance
+
+## Motivation 💭
+
+Database performance optimization is a critical yet complex task that requires deep expertise in SQL, query planning, and system architecture. Many organizations struggle with:
+
+- **Complex Query Analysis**: Identifying bottlenecks in large SQL queries
+- **Schema Design Decisions**: Making optimal choices for indexes and constraints
+- **Performance Testing**: Lack of automated tools for before/after comparisons
+- **Risk Management**: Fear of making changes that might degrade performance
+- **Knowledge Gap**: Limited access to database optimization experts
+- **Slow Detection**: Finding issues only after they cause outages
+
+This project aims to democratize database optimization by combining the power of Large Language Models (LLMs) with automated testing, predictive analytics, and intelligent alerting systems.
+
+## Project Description 📝
+
+QueryPulse-AI is an intelligent, AI-powered database performance optimization system that:
+
+### 1. 🔍 **Analyzes Database Schemas**
+- Automatically scans table structures and relationships
+- Identifies missing indexes using query statistics
+- Suggests optimal composite and partial indexes
+- Recommends partitioning strategies for large tables
+- Detects outdated statistics needing refresh
+
+### 2. ⚡ **Optimizes Queries**
+- Rewrites complex queries for better performance
+- Suggests materialized views for expensive aggregations
+- Identifies common anti-patterns (SELECT *, N+1 queries)
+- Provides detailed EXPLAIN ANALYZE plan analysis
+- Compares before/after execution plans
+
+### 3. 📊 **Tests Performance**
+- Runs automated benchmarks with timing measurements
+- Compares query execution times with statistical significance
+- Measures resource utilization (CPU, I/O, memory)
+- Generates detailed markdown reports
+- Validates improvements with rollback capability
+
+### 4. 🤖 **Autonomous Optimization**
+- **Auto-Fix Mode**: Creates missing indexes with approval
+- **Predictive Alerts**: Detects growth trends and degradation
+- **Natural Language Interface**: Ask questions about performance
+- **Smart Rollback**: Reverts changes that don't improve performance
+
+### 5. 🎯 **Real-Time Monitoring**
+- Live performance dashboards with Plotly visualizations
+- Active alert management with severity levels
+- Historical trend analysis
+- Index usage heatmaps
+- Slow query detection and ranking
+
+### 6. 🔄 **Multi-Database Support**
+- PostgreSQL (primary)
+- MySQL (via adapter)
+- MongoDB (via adapter)
+- Extensible adapter pattern for new databases
+
+## 🎯 Key Features
+
+### Core Features
+- 🔍 Automated schema analysis and optimization suggestions
+- 📊 Query performance testing and benchmarking
+- 🛠️ LLM-powered query rewriting and improvement
+- 📈 Before/After performance comparison
+- 🔄 Safe rollback capabilities
+- 🤖 AI-driven insights for better decision making
+
+### Advanced Features (v1.0)
+- 🤖 **Autonomous Fix Mode**: Auto-create indexes with approval workflow
+- 💬 **Natural Language Debugging**: "Why is my orders query slow?" - AI explains
+- 🔔 **Predictive Alerting**: 24-hour advance warning of performance issues
+- 📊 **Beautiful Dashboard**: Real-time charts, heatmaps, and metrics
+- 🔄 **Multi-DB Support**: PostgreSQL, MySQL, MongoDB ready
+- 📈 **Index Analytics**: Track usage, size, and effectiveness
+- ⏮️ **Smart Rollback**: Automatic rollback if performance degrades
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/cloudraftio/stonebraker.git
+cd stonebraker
+
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your credentials
+
+# Start the application
+streamlit run app.py
+
 **This is a beta release (v0.1-beta) and NOT production-ready software. Use at your own risk.**
 - This tool may suggest database changes that could impact performance
 - Always test suggestions in a non-production environment first
@@ -163,150 +286,3 @@ Before contributing or deploying:
 ## 📄 License
 
 The  is distributed under AGPL-3.0-only.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# QueryPulse-AI: Real-Time Database Performance Analyzer for PostgreSQL 🚀
-
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14%2B-blue.svg)](https://www.postgresql.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
-[![Version](https://img.shields.io/badge/version-1.0--beta-orange.svg)](https://github.com/cloudraftio/stonebraker/releases)
-
-## ⚠️ Disclaimer
-
-**This is a beta release (v1.0-beta) and NOT production-ready software. Use at your own risk.**
-- This tool may suggest database changes that could impact performance
-- Always test suggestions in a non-production environment first
-- Back up your database before applying any changes
-- The autonomous fix mode should be used with approval enabled initially
-
-## 🌟 What's New in v1.0
-
-- **Autonomous Fix Mode** 🤖 - Auto-create indexes with approval workflow
-- **Natural Language Debugging** 💬 - Ask "Why is my DB slow?" in plain English
-- **Predictive Alerting** 🔔 - Detect performance degradation before outages
-- **Multi-Database Support** 🔄 - PostgreSQL, MySQL, MongoDB adapters
-- **Beautiful Dashboard** 📊 - Real-time performance visualizations
-- **Index Usage Analytics** 📈 - Track which indexes are actually being used
-- **Smart Rollback** ⏮️ - Automatic rollback if indexes hurt performance
-
-## Motivation 💭
-
-Database performance optimization is a critical yet complex task that requires deep expertise in SQL, query planning, and system architecture. Many organizations struggle with:
-
-- **Complex Query Analysis**: Identifying bottlenecks in large SQL queries
-- **Schema Design Decisions**: Making optimal choices for indexes and constraints
-- **Performance Testing**: Lack of automated tools for before/after comparisons
-- **Risk Management**: Fear of making changes that might degrade performance
-- **Knowledge Gap**: Limited access to database optimization experts
-- **Slow Detection**: Finding issues only after they cause outages
-
-This project aims to democratize database optimization by combining the power of Large Language Models (LLMs) with automated testing, predictive analytics, and intelligent alerting systems.
-
-## Project Description 📝
-
-QueryPulse-AI is an intelligent, AI-powered database performance optimization system that:
-
-### 1. 🔍 **Analyzes Database Schemas**
-- Automatically scans table structures and relationships
-- Identifies missing indexes using query statistics
-- Suggests optimal composite and partial indexes
-- Recommends partitioning strategies for large tables
-- Detects outdated statistics needing refresh
-
-### 2. ⚡ **Optimizes Queries**
-- Rewrites complex queries for better performance
-- Suggests materialized views for expensive aggregations
-- Identifies common anti-patterns (SELECT *, N+1 queries)
-- Provides detailed EXPLAIN ANALYZE plan analysis
-- Compares before/after execution plans
-
-### 3. 📊 **Tests Performance**
-- Runs automated benchmarks with timing measurements
-- Compares query execution times with statistical significance
-- Measures resource utilization (CPU, I/O, memory)
-- Generates detailed markdown reports
-- Validates improvements with rollback capability
-
-### 4. 🤖 **Autonomous Optimization**
-- **Auto-Fix Mode**: Creates missing indexes with approval
-- **Predictive Alerts**: Detects growth trends and degradation
-- **Natural Language Interface**: Ask questions about performance
-- **Smart Rollback**: Reverts changes that don't improve performance
-
-### 5. 🎯 **Real-Time Monitoring**
-- Live performance dashboards with Plotly visualizations
-- Active alert management with severity levels
-- Historical trend analysis
-- Index usage heatmaps
-- Slow query detection and ranking
-
-### 6. 🔄 **Multi-Database Support**
-- PostgreSQL (primary)
-- MySQL (via adapter)
-- MongoDB (via adapter)
-- Extensible adapter pattern for new databases
-
-## 🎯 Key Features
-
-### Core Features
-- 🔍 Automated schema analysis and optimization suggestions
-- 📊 Query performance testing and benchmarking
-- 🛠️ LLM-powered query rewriting and improvement
-- 📈 Before/After performance comparison
-- 🔄 Safe rollback capabilities
-- 🤖 AI-driven insights for better decision making
-
-### Advanced Features (v1.0)
-- 🤖 **Autonomous Fix Mode**: Auto-create indexes with approval workflow
-- 💬 **Natural Language Debugging**: "Why is my orders query slow?" - AI explains
-- 🔔 **Predictive Alerting**: 24-hour advance warning of performance issues
-- 📊 **Beautiful Dashboard**: Real-time charts, heatmaps, and metrics
-- 🔄 **Multi-DB Support**: PostgreSQL, MySQL, MongoDB ready
-- 📈 **Index Analytics**: Track usage, size, and effectiveness
-- ⏮️ **Smart Rollback**: Automatic rollback if performance degrades
-
-## 🚀 Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/cloudraftio/stonebraker.git
-cd stonebraker
-
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your credentials
-
-# Start the application
-streamlit run app.py
