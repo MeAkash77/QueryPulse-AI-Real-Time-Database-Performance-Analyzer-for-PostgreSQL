@@ -264,23 +264,7 @@ Stonebraker is an intelligent system that combines LLM capabilities with databas
 ## 🚀 Quick Start
 
 ```bash
-# Clone the repository
-git clone https://github.com/cloudraftio/stonebraker.git
-cd stonebraker
 
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your credentials
-
-# Start the application
-streamlit run app.py
 ```
 
 ## 📋 Prerequisites
