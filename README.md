@@ -8,6 +8,55 @@ QueryPulse-AI is an intelligent, AI-powered database performance optimization sy
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
 [![Version](https://img.shields.io/badge/version-1.0--beta-orange.svg)](https://github.com/cloudraftio/stonebraker/releases)
 
+## 🛠️ Technology Stack
+
+### Core Technologies
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)
+![LangChain](https://img.shields.io/badge/LangChain-0.1+-green.svg)
+![LangGraph](https://img.shields.io/badge/LangGraph-0.0.20+-orange.svg)
+
+### Database
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14+-blue.svg)
+![MySQL](https://img.shields.io/badge/MySQL-8.0+-orange.svg)
+![MongoDB](https://img.shields.io/badge/MongoDB-5.0+-green.svg)
+![psycopg2](https://img.shields.io/badge/psycopg2-2.9+-lightgrey.svg)
+
+### LLM Providers
+![Groq](https://img.shields.io/badge/Groq-API-purple.svg)
+![Ollama](https://img.shields.io/badge/Ollama-Local-blue.svg)
+![OpenAI](https://img.shields.io/badge/OpenAI-Compatible-black.svg)
+
+### Data & Visualization
+![Pandas](https://img.shields.io/badge/Pandas-2.0+-blue.svg)
+![Plotly](https://img.shields.io/badge/Plotly-5.17+-cyan.svg)
+![NumPy](https://img.shields.io/badge/NumPy-1.24+-lightblue.svg)
+
+### Development Tools
+![Git](https://img.shields.io/badge/Git-Latest-red.svg)
+![pytest](https://img.shields.io/badge/pytest-7.4+-blue.svg)
+![black](https://img.shields.io/badge/black-23.0+-black.svg)
+![flake8](https://img.shields.io/badge/flake8-6.0+-green.svg)
+
+### Deployment
+![Docker](https://img.shields.io/badge/Docker-20.10+-blue.svg)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-1.24+-blue.svg)
+![AWS](https://img.shields.io/badge/AWS-RDS-orange.svg)
+![Neon](https://img.shields.io/badge/Neon-Tech-green.svg)
+
+### Monitoring
+![Prometheus](https://img.shields.io/badge/Prometheus-2.x-orange.svg)
+![Grafana](https://img.shields.io/badge/Grafana-10.x-blue.svg)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-Collector-purple.svg)
+
+### CI/CD
+![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-blue.svg)
+![GitLab CI](https://img.shields.io/badge/GitLab-CI-orange.svg)
+![Make](https://img.shields.io/badge/Make-4.3-lightgrey.svg)
+
+### License
+![License](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)
+
 ## ⚠️ Disclaimer
 
 **This is a beta release (v1.0-beta) and NOT production-ready software. Use at your own risk.**
