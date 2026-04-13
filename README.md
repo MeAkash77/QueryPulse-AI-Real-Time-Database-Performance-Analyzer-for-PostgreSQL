@@ -104,8 +104,8 @@ QueryPulse-AI is an intelligent, AI-powered database performance optimization sy
 
 ```bash
 # Clone the repository
-git clone https://github.com/cloudraftio/stonebraker.git
-cd stonebraker
+git clone https://github.com/MeAkash77/QueryPulse-AI-Real-Time-Database-Performance-Analyzer-for-PostgreSQL.git
+cd QueryPulse-AI-Real-Time-Database-Performance-Analyzer-for-PostgreSQL
 
 # Create and activate virtual environment
 python -m venv venv
@@ -269,10 +269,6 @@ Before contributing or deploying:
 2. Check for credentials in git history
 3. Verify no API tokens in code
 4. Remove unnecessary files
-
-## 📞 Contact & Support
-
-- **Issues**: Use [GitHub Issue Tracker](https://github.com/cloudraftio/stonebraker/issues)
 
 ## 📄 License
 
