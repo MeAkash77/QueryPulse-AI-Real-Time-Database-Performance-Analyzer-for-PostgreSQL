@@ -1,12 +1,3 @@
-# QueryPulse-AI-Real-Time-Database-Performance-Analyzer-for-PostgreSQL 🚀
-
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14%2B-blue.svg)](https://www.postgresql.org/)
-[![Version](https://img.shields.io/badge/version-0.1--beta-orange.svg)](https://github.com/yourusername/stonebraker/releases)
-
-## ⚠️ Disclaimer
-
 # QueryPulse-AI: Real-Time Database Performance Analyzer for PostgreSQL 🚀
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
