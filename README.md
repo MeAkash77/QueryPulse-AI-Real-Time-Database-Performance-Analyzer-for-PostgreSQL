@@ -7,57 +7,56 @@ QueryPulse-AI is an intelligent, AI-powered database performance optimization sy
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14%2B-blue.svg)](https://www.postgresql.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
 [![Version](https://img.shields.io/badge/version-1.0--beta-orange.svg)](https://github.com/cloudraftio/stonebraker/releases)
-
-## 🛠️ Technology Stack
-
-### Core Technologies
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)
 ![LangChain](https://img.shields.io/badge/LangChain-0.1+-green.svg)
 ![LangGraph](https://img.shields.io/badge/LangGraph-0.0.20+-orange.svg)
-
-### Database
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14+-blue.svg)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0+-orange.svg)
 ![MongoDB](https://img.shields.io/badge/MongoDB-5.0+-green.svg)
 ![psycopg2](https://img.shields.io/badge/psycopg2-2.9+-lightgrey.svg)
-
-### LLM Providers
 ![Groq](https://img.shields.io/badge/Groq-API-purple.svg)
 ![Ollama](https://img.shields.io/badge/Ollama-Local-blue.svg)
 ![OpenAI](https://img.shields.io/badge/OpenAI-Compatible-black.svg)
-
-### Data & Visualization
 ![Pandas](https://img.shields.io/badge/Pandas-2.0+-blue.svg)
 ![Plotly](https://img.shields.io/badge/Plotly-5.17+-cyan.svg)
 ![NumPy](https://img.shields.io/badge/NumPy-1.24+-lightblue.svg)
-
-### Development Tools
 ![Git](https://img.shields.io/badge/Git-Latest-red.svg)
 ![pytest](https://img.shields.io/badge/pytest-7.4+-blue.svg)
 ![black](https://img.shields.io/badge/black-23.0+-black.svg)
 ![flake8](https://img.shields.io/badge/flake8-6.0+-green.svg)
-
-### Deployment
 ![Docker](https://img.shields.io/badge/Docker-20.10+-blue.svg)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-1.24+-blue.svg)
 ![AWS](https://img.shields.io/badge/AWS-RDS-orange.svg)
 ![Neon](https://img.shields.io/badge/Neon-Tech-green.svg)
-
-### Monitoring
 ![Prometheus](https://img.shields.io/badge/Prometheus-2.x-orange.svg)
 ![Grafana](https://img.shields.io/badge/Grafana-10.x-blue.svg)
 ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-Collector-purple.svg)
-
-### CI/CD
 ![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-blue.svg)
 ![GitLab CI](https://img.shields.io/badge/GitLab-CI-orange.svg)
 ![Make](https://img.shields.io/badge/Make-4.3-lightgrey.svg)
-
-### License
 ![License](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)
 
-## ⚠️ Disclaimer
+
+## Technology Stack 🛠️
+
+| Category | Technologies |
+|----------|--------------|
+| **Language** | Python 3.8+, TypeScript 5.7, JavaScript ES6 |
+| **Framework** | Streamlit 1.28+, LangChain 0.1+, LangGraph 0.0.20+ |
+| **Database** | PostgreSQL 14+, MySQL 8.0+, MongoDB 5.0+ |
+| **LLM** | Groq API, Ollama API, OpenAI-compatible |
+| **Data** | Pandas 2.0+, Plotly 5.17+, NumPy 1.24+ |
+| **Testing** | pytest 7.4+, unittest, timeit |
+| **Dev Tools** | Git, python-dotenv, pre-commit 3.5+ |
+| **Linting** | black 23.0+, flake8 6.0+ |
+| **Deployment** | Docker 20.10+, Kubernetes 1.24+, AWS RDS |
+| **Monitoring** | Prometheus 2.x, Grafana 10.x, OpenTelemetry |
+| **CI/CD** | GitHub Actions, GitLab CI, Make 4.3 |
+| **Security** | SSL/TLS, RBAC, Audit Logging |
+| **License** | AGPL-3.0-only |
+
+## Disclaimer ⚠️
 
 **This is a beta release (v1.0-beta) and NOT production-ready software. Use at your own risk.**
 - This tool may suggest database changes that could impact performance
@@ -65,7 +64,7 @@ QueryPulse-AI is an intelligent, AI-powered database performance optimization sy
 - Back up your database before applying any changes
 - The autonomous fix mode should be used with approval enabled initially
 
-## 🌟 What's New in v1.0
+## What's New in v1.0 🌟
 
 - **Autonomous Fix Mode** 🤖 - Auto-create indexes with approval workflow
 - **Natural Language Debugging** 💬 - Ask "Why is my DB slow?" in plain English
@@ -89,7 +88,7 @@ Database performance optimization is a critical yet complex task that requires d
 This project aims to democratize database optimization by combining the power of Large Language Models (LLMs) with automated testing, predictive analytics, and intelligent alerting systems.
 
 
-## Features
+## Features 🌟
 
 <img width="959" height="479" alt="Image" src="https://github.com/user-attachments/assets/d98ee304-5ff0-4339-8ee4-c2c85c7dd770" />
 <img width="959" height="478" alt="Image" src="https://github.com/user-attachments/assets/11222cbf-125b-4de9-bbfa-2f40f6a68586" />
@@ -98,7 +97,7 @@ This project aims to democratize database optimization by combining the power of
 
 
 
-### Component Descriptions
+### Component Descriptions 🌟
 
 | Component | Description |
 |-----------|-------------|
@@ -107,7 +106,7 @@ This project aims to democratize database optimization by combining the power of
 | **Core Modules** | SQL Agent, Auto Fixer, Alert Manager, Dashboard |
 | **Database Adapters** | PostgreSQL (primary), MySQL, MongoDB, Custom adapters |
 
-### Data Flow
+### Data Flow ⚡
 
 1. **User Input** → Streamlit UI captures optimization request
 2. **Analysis** → Performer Graph analyzes schema and queries
@@ -129,7 +128,7 @@ QueryPulse-AI is an intelligent, AI-powered database performance optimization sy
 - Recommends partitioning strategies for large tables
 - Detects outdated statistics needing refresh
 
-### 2. ⚡ **Optimizes Queries**
+### 2. **Optimizes Queries**
 - Rewrites complex queries for better performance
 - Suggests materialized views for expensive aggregations
 - Identifies common anti-patterns (SELECT *, N+1 queries)
